@@ -1,0 +1,460 @@
+    @charset "UTF-8";
+    /*!
+* Rahman Çaylak - Personal Website  v1.0.0 (https://rahmancaylak.github.io)
+* Copyright 2020 Rahman Çaylak
+* Licensed under MIT (https://github.com)
+*/
+    
+    @font-face {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        src: local('Montserrat'), local('Montserrat'), url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap) format('woff2');
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(6, 16, 30);
+    }
+    
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 35px;
+    }
+    
+    hr {
+        border: 1px solid gray;
+    }
+    /* header side here */
+    
+    header {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        padding-top: 25px;
+    }
+    
+    header ul {
+        float: right;
+    }
+    
+    header li {
+        color: white;
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    
+    header li a {
+        text-decoration: none;
+        color: white;
+        transition: 0.7s all;
+    }
+    
+    .header-menu::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .3s;
+    }
+    
+    .header-menu:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+    
+    header li a:hover {
+        text-decoration: none;
+        color: rgb(187, 186, 186);
+        opacity: 0.8;
+    }
+    
+    .header-logo {
+        margin-right: 15px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+    
+    .header-logo:hover {
+        opacity: 0.6;
+    }
+    /* Fixed Menu Settings */
+    
+    .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        transition-duration: 0.9s;
+    }
+    
+    .affix a {
+        color: black;
+    }
+    
+    .affix a:hover {
+        color: purple;
+    }
+    
+    .affix+.container-fluid {
+        padding-top: 70px;
+    }
+    /* Home Side Here */
+    
+    .home {
+        height: 500px;
+        text-align: center;
+        color: white;
+    }
+    
+    .home-profile-photo {
+        box-shadow: 0 0 42px 0 rgba(0, 0, 0, .38);
+        width: 230px;
+        height: 230px;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 35px;
+    }
+    
+    .home-surname {
+        color: #ff214f;
+    }
+    
+    .home-typewrite {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .home-scroll-down {
+        color: #fff;
+        font-size: 23px;
+        opacity: .5;
+        padding-top: 70px;
+        padding-left: 20px;
+        display: inline-block;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    
+    .home-scroll-down:focus,
+    .home-scroll-downn:hover {
+        color: #fff;
+        opacity: 1
+    }
+    
+    .home-scroll-down.selected {
+        color: #fff!important
+    }
+    
+    .home-scroll-down.selected:after {
+        width: 0
+    }
+    
+    .home-scroll-down:hover {
+        color: #fff;
+        transition: all .3s ease
+    }
+    
+    .home-scroll-down:focus {
+        color: #fff
+    }
+    
+    .animateArrow {
+        border-radius: 50%;
+        animation: animateArrow 2s infinite;
+    }
+    
+    @keyframes animateArrow {
+        0%,
+        100% {
+            transform: translateY(0)
+        }
+        40% {
+            transform: translateY(-20px)
+        }
+    }
+    /* Home Social Networks Side */
+    
+    .home-social-networks {
+        bottom: 0;
+        display: block;
+        padding: 20px;
+        position: absolute;
+        top: 22%;
+    }
+    
+    .home-social-networks li {
+        list-style: none;
+        margin-bottom: 42px;
+    }
+    
+    .home-social-networks a {
+        color: #fff;
+        font-size: 24px;
+        transition: all ease .3s;
+        opacity: 1;
+    }
+    
+    .home-social-networks a:hover {
+        transition: all ease .3s;
+    }
+    /* Social Media İcons */
+    
+    .fa-instagram {
+        color: #fff;
+    }
+    
+    .fa-instagram:hover {
+        color: #5851db;
+    }
+    
+    .fa-linkedin {
+        color: #fff;
+    }
+    
+    .fa-linkedin:hover {
+        color: #0077b5;
+    }
+    
+    .fa-twitter {
+        color: #fff;
+    }
+    
+    .fa-twitter:hover {
+        color: #55acee;
+    }
+    
+    .fa-github:hover {
+        color: #fff;
+        opacity: 0.4;
+    }
+    /* About Side Here */
+    
+    .about {
+        padding: 30px 0 60px;
+        background-color: white;
+    }
+    
+    .about-title {
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 20px 0 40px 0;
+    }
+    
+    .svg {
+        width: 30px;
+        height: 30px;
+        color: #ff214f;
+        position: absolute;
+        left: -55px;
+        top: -3px;
+    }
+    
+    .about-education ul {
+        margin: 0px;
+        width: 100%;
+        float: left;
+        list-style-type: none;
+        position: relative;
+    }
+    
+    .about-education ul::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        top: 11px;
+        bottom: 5px;
+        background-color: rgba(0, 0, 0, .2);
+        left: 40px;
+    }
+    
+    .about-education ul li {
+        width: 100%;
+        margin: 0px 0px 50px 0px;
+        float: left;
+        padding-left: 40px;
+    }
+    
+    .about-education ul li:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .about-education ul li .inner {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        position: relative;
+    }
+    
+    .about-education ul li .inner .year {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 700;
+        font-family: "Montserrat";
+    }
+    
+    .about-education ul li .inner .title {
+        margin-bottom: 20px;
+        margin-top: 0;
+        color: black;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .about-workExperience ul {
+        margin: 0;
+        width: 100%;
+        float: left;
+        list-style-type: none;
+        position: relative;
+    }
+    
+    .about-workExperience ul::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        top: 11px;
+        bottom: 5px;
+        background-color: rgba(0, 0, 0, .2);
+        left: 40px;
+    }
+    
+    .about-workExperience ul li {
+        width: 100%;
+        margin: 0px 0px 50px 0px;
+        float: left;
+        padding-left: 40px;
+    }
+    
+    .about-workExperience ul li:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .about-workExperience ul li .inner {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        position: relative;
+    }
+    
+    .about-workExperience ul li .inner .year {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 700;
+        font-family: "Montserrat";
+    }
+    
+    .about-workExperience ul li .inner .title {
+        color: black;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    /* Contact Side Here */
+    
+    .contact {
+        padding: 30px 0 60px;
+        background-color: #060606;
+    }
+    
+    .contact-title {
+        color: white;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    .contact-mail {
+        text-align: center;
+        color: #888;
+        font-family: "Montserrat";
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .contact-text {
+        text-align: center;
+        color: #888;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 400;
+    }
+    /* Footer Side Here */
+    
+    footer {
+        padding: 40px 0;
+        width: 100%;
+    }
+    
+    .footer-background {
+        background: #030303
+    }
+    
+    .footer-copyright-text {
+        padding: 0 200px
+    }
+    
+    .footer-copyright-text p {
+        color: #555;
+        font-size: 16px
+    }
+    
+    .footer-copyright-text hr {
+        border-top: 1px solid #353535
+    }
+    
+    .footer-social-networks {
+        height: 30px
+    }
+    
+    .footer-social-networks a {
+        color: #fff;
+        font-size: 22px;
+        margin: 0 15px;
+        transition: all ease .3s
+    }
+    
+    .footer-social-networks a:hover {
+        transition: all ease .3s;
+        opacity: .5
+    }
+    /* Mobile Settings Here */
+    
+    @media screen and (max-width: 978px) {
+        header li {
+            display: none;
+        }
+        .home-social-networks {
+            display: none
+        }
+        .about-workExperience ul {
+            margin-top: 15px;
+        }
+        .footer-copyright-text {
+            padding: 0
+        }
+        .footer-social-networks a {
+            margin: 0 10px;
+            font-size: 160%;
+        }
+    }
