@@ -6,6 +6,7 @@
 }
 
 * {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -36,6 +37,11 @@ h2 {
 /*
 Home Page
 */
+
+.slider-pd {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .home-gallery {
     background-image: url("../images/home-gallery-background.jpg");
